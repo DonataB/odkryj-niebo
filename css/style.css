@@ -12,11 +12,19 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
 /* navigation */
 .nav {
-	/* position: relative; */
+	position: sticky;
+	top: 0;
 	height: 50px;
 	background-color: #7c7c7c;
+	z-index: 2;
 }
 
 .burger-icon {
@@ -70,6 +78,25 @@ body {
 	color: #4fcbeb;
 }
 
+/* main {
+	margin: 50px 0;
+} */
+
+/* about us */
+
+.about-us {
+	margin: 15px 0;
+}
+
+.about-us h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.about-us-info {
+	padding: 0 10px;
+}
+
+
 @media (min-width: 768px) {
 	.burger-icon {
 		display: none;
@@ -103,7 +130,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-
 	.nav-item {
 		font-size: 28px;
 	}
