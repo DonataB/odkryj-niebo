@@ -15,10 +15,17 @@ body {
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 
+.section-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
 /* navigation */
+
 .nav {
 	position: sticky;
 	top: 0;
@@ -50,7 +57,6 @@ body {
 	background-image: url('../img/balloons-small.jpg');
 	background-size: cover;
 	background-position: center;
-	/* z-index: -1; */
 }
 
 .hero-bg {
@@ -88,16 +94,47 @@ body {
 	margin: 15px 0;
 }
 
-.about-us h2 {
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: bold;
-}
 .about-us-info {
 	padding: 0 20px;
 	margin-top: 10px;
 }
 
+/* offers */
+
+.offers {
+	margin: 60px auto;
+}
+
+.offer {
+	position: relative;
+	height: 300px;
+	background-image: url('../img/kids-small.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin: 10px;
+}
+
+.offer h3 {
+	text-transform: uppercase;
+	transition: transform 0.3s;
+}
+
+.offer:hover h3 {
+	transform: scale(1.5);
+}
+
+.firts-offer {
+	background-image: url('../img/sky-small.jpg');
+}
+
+.second-offer {
+	background-image: url('../img/skydiving-small.jpg');
+}
+
+.third-offer {
+	background-image: url('../img/airplane-small.jpg');
+}
 
 @media (min-width: 768px) {
 	.burger-icon {
@@ -121,6 +158,9 @@ body {
 	.nav-item a:hover {
 		color: #4fcbeb;
 	}
+	.header {
+		background-image: url('../img/balloons-big.jpg');
+	}
 
 	.hero-text h1 {
 		font-size: 32px;
@@ -129,16 +169,34 @@ body {
 	.hero-text p {
 		font-size: 18px;
 	}
+	.about-us {
+		margin: 30px 0;
+	}
 }
 
+@media (min-width: 992px) {
+	.offer {
+		display: inline-block;
+		width: 50%;
+	}
+}
 @media (min-width: 1440px) {
 	.nav-item {
 		font-size: 28px;
 	}
+
 	.hero-text h1 {
 		font-size: 42px;
 	}
 	.hero-text p {
+		font-size: 24px;
+	}
+
+	.section-title {
+		font-size: 36px;
+	}
+
+	.about-us-info {
 		font-size: 24px;
 	}
 }
