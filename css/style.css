@@ -24,6 +24,10 @@ body {
 	font-weight: bold;
 	margin-bottom: 10px;
 }
+
+section {
+	scroll-margin-top: 80px;
+}
 /* navigation */
 
 .nav {
@@ -136,6 +140,27 @@ body {
 	background-image: url('../img/airplane-small.jpg');
 }
 
+/* kontakt */
+
+.contact {
+	text-align: center;
+}
+.contact h3 {
+	text-transform: uppercase;
+	margin: 20px 0 5px;
+}
+
+.fa-solid {
+	margin-right: 10px;
+}
+/* footer */
+
+footer {
+	padding: 30px 10px;
+	background-color: #ddd;
+	text-align: center;
+}
+
 @media (min-width: 768px) {
 	.burger-icon {
 		display: none;
@@ -186,12 +211,6 @@ body {
 	}
 }
 
-@media (min-width: 992px) {
-	.offer {
-		display: inline-block;
-		width: 50%;
-	}
-}
 @media (min-width: 1440px) {
 	.nav-item {
 		font-size: 28px;
@@ -199,6 +218,10 @@ body {
 
 	.hero-text h1 {
 		font-size: 42px;
+	}
+
+	.hero-text h3 {
+		font-size: 36px;
 	}
 	.hero-text p {
 		font-size: 24px;
