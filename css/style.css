@@ -34,7 +34,7 @@ section {
 	position: sticky;
 	top: 0;
 	height: 50px;
-	background-color: #7c7c7c;
+	background-color: #aee6a0;
 	z-index: 2;
 }
 
@@ -88,10 +88,6 @@ section {
 	color: #4fcbeb;
 }
 
-/* main {
-	margin: 50px 0;
-} */
-
 /* about us */
 
 .about-us {
@@ -140,7 +136,7 @@ section {
 	background-image: url('../img/airplane-small.jpg');
 }
 
-/* kontakt */
+/* contact */
 
 .contact {
 	text-align: center;
@@ -156,9 +152,15 @@ section {
 /* footer */
 
 footer {
-	padding: 30px 10px;
-	background-color: #ddd;
+	padding: 20px 10px;
+	margin-top: 20px;
+	background-color: #aee6a0;
 	text-align: center;
+}
+
+footer .link {
+	text-transform: none;
+	padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -172,7 +174,7 @@ footer {
 		line-height: 50px;
 	}
 
-	.nav-item a {
+	.link {
 		padding: 0 30px;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -180,7 +182,7 @@ footer {
 		font-weight: bold;
 		transition: color 0.3s;
 	}
-	.nav-item a:hover {
+	.link:hover {
 		color: #4fcbeb;
 	}
 	.header {
